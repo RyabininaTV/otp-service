@@ -78,39 +78,6 @@ otp-service/
 
 ---
 
-## 🚀 Установка и запуск
-
-### Требования
-
-- **Java 17** или новее
-- **Gradle** 8+ (можно использовать встроенный wrapper)
-- **Git** (для клонирования репозитория)
-
-### Шаг 1. Клонирование репозитория
-
-```bash
-git clone https://github.com/YOUR_USERNAME/otp-service.git
-cd otp-service
-```
-
-### Шаг 2. Сборка проекта
-
-```bash
-gradle clean build
-```
-
-### Шаг 3. Запуск приложения
-
-```bash
-gradle run
-```
-
-После запуска увидите:
-
-```bash
-OTP Service started successfully on port 8080
-```
-
 ## 🔐 Безопасность
 
 - Пароли хешируются с использованием SHA-256 + соль
