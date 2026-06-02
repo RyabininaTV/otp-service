@@ -1,0 +1,26 @@
+# Compiled files
+build/
+.gradle/
+out/
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+otp_codes.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Config with secrets
+src/main/resources/email.properties
+src/main/resources/sms.properties
