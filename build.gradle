@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.promoit'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'com.promoit.otp.App'
+}
+
+dependencies {
+    implementation 'com.h2database:h2:2.2.224'
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.5'
+    implementation 'org.slf4j:slf4j-api:2.0.12'
+    implementation 'ch.qos.logback:logback-classic:1.5.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+}
